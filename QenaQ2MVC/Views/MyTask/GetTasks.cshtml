@@ -1,0 +1,71 @@
+﻿@model IEnumerable<QenaQ2MVC.Models.MyTask>
+
+@{
+    ViewData["Title"] = "GetTasks";
+}
+<br />
+<br />
+<br />
+<p>
+    <button type="button" class="btn btn-dark"> <a style="color:whitesmoke" asp-action="Create">Add new Task Item</a></button>
+</p>
+
+ @*-------------------------searchbox------------------------------------*@
+
+@{
+    ViewBag.Title = "GetSearchTasks";
+}
+@using (Html.BeginForm("GetSearchTasks", "MyTask", FormMethod.Get))
+{
+    <input type="text" id="searchbox" name="searchbox" placeholder="Search by Name" />
+    <input class="btn btn-dark" type="submit" value="submit" />
+
+}
+ <br />
+    <br />
+
+                @using (Html.BeginForm("GetFilterTasks", "MyTask", FormMethod.Get))
+                {
+                    <input type="text" id="statusfil" name="statusfil" placeholder="Search by Status" />
+    <input class="btn btn-dark" type="submit" value="submit" />
+
+
+
+
+
+
+                }
+
+
+
+
+
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                All Tasks
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @item.Name  
+               
+                
+
+            </td>
+            <td>
+                    <a style="color:black" asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
+                    <a style="color:black" asp-action="Delete" asp-route-id="@item.ID">Delete</a>|
+                    <a style="color:black" asp-action="GetDetails" asp-route-id="@item.ID">Details</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

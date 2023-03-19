@@ -1,0 +1,13 @@
+﻿@using QenaQ2MVC.Models
+@model List<User>
+
+
+
+    <h1 style="color:red">Users List</h1>
+    @foreach (var item in Model)
+    {
+         <h1>@item.ID</h1>   
+         <h2>@item.Name</h2>
+       
+        <hr />
+    }

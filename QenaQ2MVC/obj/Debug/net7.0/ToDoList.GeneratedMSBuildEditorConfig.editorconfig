@@ -1,0 +1,29 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = ToDoList
+build_property.RootNamespace = ToDoList
+build_property.ProjectDir = D:\ITI FULL STACK .NET\MVC\Project\lab2\QenaQ2MVC\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\ITI FULL STACK .NET\MVC\Project\lab2\QenaQ2MVC
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/ITI FULL STACK .NET/MVC/Project/lab2/QenaQ2MVC/Views/CategoryTask/GetAuthor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlUYXNrXEdldEF1dGhvci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ITI FULL STACK .NET/MVC/Project/lab2/QenaQ2MVC/Views/MyTask/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXlUYXNrXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ITI FULL STACK .NET/MVC/Project/lab2/QenaQ2MVC/Views/User/GetImage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxHZXRJbWFnZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

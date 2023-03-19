@@ -1,0 +1,42 @@
+﻿@model IEnumerable<QenaQ2MVC.Models.MyTask>
+
+@{
+    ViewBag.Title = "GetSearchTasks";
+}
+@*@using (Html.BeginForm("GetSearchTasks","MyTask",FormMethod.Get))
+{
+    <input type="text" id="searchbox" name="searchbox" placeholder="Search"/>
+    <input type="submit" value="submit"/>
+
+}*@
+<br />
+<br />
+<br />
+<table class="table">
+    
+        <tr>
+            <th>
+                 Result
+            </th>
+            
+        </tr>
+   
+  
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @item.Name
+
+
+
+                </td>
+                <td>
+                    <a style="color:black" asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
+                    <a style="color:black" asp-action="Delete" asp-route-id="@item.ID">Delete</a>|
+                    <a style="color:black" asp-action="Delete" asp-route-id="@item.ID">Details</a>
+                </td>
+            </tr>
+        }
+    
+</table>

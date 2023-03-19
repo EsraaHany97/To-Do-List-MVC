@@ -1,0 +1,53 @@
+﻿@model IEnumerable<QenaQ2MVC.Models.CategoryTask>
+
+@{
+    ViewData["Title"] = "GetCategories";
+}
+<br />
+<br />
+<br />
+<p>
+    <button type="button" class="btn btn-dark"> <a style="color:whitesmoke" asp-action="CreateCategory">Add new Category Item</a></button>
+</p>
+
+
+
+
+
+
+
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                All Categories
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @item.Name  
+               
+                
+
+            </td>
+             <td>
+                @item.ID
+               
+                
+
+            </td>
+            <td>
+                    <a style="color:black" asp-action="EditCategory" asp-route-id="@item.ID">Edit</a> |
+            <a style="color:black" asp-action="DeleteCategory" asp-route-id="@item.ID">Delete</a>|
+            <a style="color:black" asp-action="GetCategoryDetails" asp-route-id="@item.ID">Details</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

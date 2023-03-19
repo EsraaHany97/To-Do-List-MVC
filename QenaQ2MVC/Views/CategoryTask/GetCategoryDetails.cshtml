@@ -1,0 +1,36 @@
+﻿@model IEnumerable<QenaQ2MVC.Models.CategoryTask>
+
+@{
+    ViewData["Title"] = "GetCategoryDetails";
+}
+<br />
+<br />
+<br />
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Category Details
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    <p>ID</p>
+                    @item.ID
+                </td>
+                <td>
+                    <p>Name</p>
+                    @item.Name
+                </td>
+                
+
+            </tr>
+        }
+    </tbody>
+</table>

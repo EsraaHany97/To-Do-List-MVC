@@ -1,0 +1,62 @@
+﻿@model IEnumerable<QenaQ2MVC.Models.MyTask>
+
+@{
+    ViewData["Title"] = "GetTasks";
+}
+<br />
+<br />
+<br />
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+               Task Details
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    <p>ID</p>
+                    @item.ID
+                </td>
+                <td>
+                    <p>Name</p>
+                    @item.Name
+                 </td>
+                     <td>
+                         <p>User</p>
+                    @item.Owner
+                        </td>
+                        <td>
+                         <p>User ID</p>
+                    @item.UserID
+                        </td>
+                            <td>
+                    <p>Status</p>
+                    @item.Status
+                        </td>
+                            <td>
+                    <p>AssignDate</p>
+                    @item.AssignDate
+                        </td>
+                <td>
+                    <p>Task Category</p>
+                    @item.Category
+                        </td>
+                <td>
+                    <p>Description</p>
+                    @item.Description
+
+
+
+                </td>
+                
+            </tr>
+        }
+    </tbody>
+</table>
